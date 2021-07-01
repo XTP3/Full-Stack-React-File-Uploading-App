@@ -1,0 +1,16 @@
+{
+    "HTTP_PORT": 80,
+    "HTTPS_PORT": 443,
+    "PRIVATE_KEY_FILEPATH": "/certs/server.key",
+    "CERTIFICATE_FILEPATH": "/certs/server.cert",
+    "CA_CERT_FILEPATH": "",
+    "PEM_PASSPHRASE": "onlyForPemCerts",
+    "DATABASE_URL": "mongodb://localhost/XThou",
+    "ACCOUNT_CREATION_CODE": "yXMA'({Cbt92y;[K",
+    "BCRYPT_SALT_ROUNDS": 10,
+    "JWT_SECRET_KEY": "bananaCream",
+    "JWT_EXPIRATION": "30m",
+    "MAX_UPLOAD_SIZE": 10737418240,
+    "DATE_LANGUAGE": "en-US",
+    "DATE_TIMEZONE_REGION": "America/New_York"
+}
