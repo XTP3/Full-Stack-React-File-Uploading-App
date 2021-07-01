@@ -8,7 +8,8 @@ This is my very first:
 - Express
 - Multer
 - MongoDB
-- Responsive Web
+- Responsive
+
 project.
 
 ## Installation
