@@ -1,0 +1,35 @@
+.SearchBar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    height: 50px;
+    width: 120px;
+    margin-right: 20px;
+}
+
+.SearchBar > ion-icon {
+    color: white;
+    font-size: large;
+    margin-right: 10px;
+}
+
+.SearchInput {
+    position: relative;
+    height: 70%;
+    width: 70%;
+    background-color: #1d1d1d;
+    box-shadow: 0 0 20px 0px black;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    text-indent: 5px;
+}
+
+@media only screen and (min-width: 620px) {
+    .SearchBar {
+        width: 300px;
+    }
+}

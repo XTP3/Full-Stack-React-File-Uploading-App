@@ -1,0 +1,26 @@
+.ActiveClearButton, .InactiveClearButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 55px;
+    background-color: transparent;
+    border: none;
+    margin: 20px;
+}
+
+.ActiveClearButton > ion-icon, .InactiveClearButton > ion-icon {
+    font-size: 35px;
+}
+
+.ActiveClearButton:hover {
+    cursor: pointer;
+}
+
+.ActiveClearButton > ion-icon {
+    color: #ff0000;
+}
+
+.InactiveClearButton > ion-icon {
+    color: #635f5f;
+}

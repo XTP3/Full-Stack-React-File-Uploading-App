@@ -1,0 +1,36 @@
+.RefreshButton {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    margin-left: 8px;
+    background-color: #1d1d1d;
+    box-shadow: 0 0 20px 0px black;
+}
+
+.RefreshButton > ion-icon {
+    color: white;
+}
+
+.RefreshButton:hover {
+    cursor: pointer;
+    background-color: #333333;
+}
+
+.Title {
+    display: none;
+    color: white;
+}
+
+@media only screen and (min-width: 500px) {
+    .Title {
+        display: block;
+        margin-left: 10px;
+    }
+    .RefreshButton {
+        width: 100px;
+    }
+}

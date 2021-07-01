@@ -1,0 +1,79 @@
+.UserFile {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    box-shadow: 0px 0px 20px 0px black;
+    border-radius: 5px;
+    color: white;
+    margin-top: 15px;
+}
+
+.UserFileName, .UserFileSize, .UserFileUploadDate {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    margin-top: 15px;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.DisplayIconWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.UFileName, .UFileSize, .UUploadDate {
+    display: flex;
+    align-items: center;
+}
+
+.UserFileActions {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(5, 1fr);
+    height: 50px;
+}
+
+.DownloadButton, .ViewButton, .CopyDownloadLinkButton, .CopyViewLinkButton, .DeleteButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1d1d1d;
+    box-sizing: border-box;
+    border: 0.5px solid black;
+}
+
+.DownloadButton:hover, .ViewButton:hover, .CopyDownloadLinkButton:hover, .CopyViewLinkButton:hover, .DeleteButton:hover {
+    cursor: pointer;
+    background-color: #2f2e2e;    
+}
+
+.DownloadButton > ion-icon, .ViewButton > ion-icon, .CopyDownloadLinkButton > ion-icon, .CopyViewLinkButton > ion-icon, .DeleteButton > ion-icon {
+    font-size: x-large;
+}
+
+.ButtonTitle {
+    display: none;
+    margin-left: 10px;
+}
+
+@media only screen and (min-width: 550px) {
+    .UserFileName, .UserFileSize, .UserFileUploadDate {
+        grid-template-columns: 10% 90%;
+    }
+}
+
+@media only screen and (min-width: 880px) {
+    .ButtonTitle {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1050px) {
+    .FileListWrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .UsersFileList {
+        min-width: 900px;
+    }
+}

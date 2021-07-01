@@ -1,0 +1,26 @@
+.ActiveUploadButton, .InactiveUploadButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    margin: 20px;
+}
+
+.ActiveUploadButton > ion-icon, .InactiveUploadButton > ion-icon {
+    font-size: 35px;
+}
+
+.ActiveUploadButton:hover {
+    cursor: pointer;
+}
+
+.ActiveUploadButton > ion-icon {
+    color: #1bff00;
+}
+
+.InactiveUploadButton > ion-icon {
+    color: #635f5f;
+}

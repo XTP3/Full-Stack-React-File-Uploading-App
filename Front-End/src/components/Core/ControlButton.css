@@ -1,0 +1,43 @@
+.ActiveControlButton, .InactiveControlButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+    background-color: #0c0e0e;
+    list-style: none;
+    border-radius: 1px;
+    margin-top: 0px;
+}
+
+.ActiveControlButton {
+    border-left: 3px solid #006aff;
+    box-sizing: border-box;
+    /*box-shadow: 0 0 15px 1px rgb(0 105 255);*/
+}
+
+.ActiveControlButton > ion-icon {
+    font-size: 25px;
+    color: #00b8ff;
+}
+
+.ActiveControlButton:hover {
+    cursor: pointer;
+}
+
+.InactiveControlButton {
+    transition: box-shadow 0.5s ease, border-left 0.1s ease;
+}
+
+.InactiveControlButton > ion-icon {
+    font-size: 25px;
+    color: white;
+}
+
+.InactiveControlButton:hover > ion-icon {
+    transition: box-shadow 0.5s ease, border-left 0.1s ease;
+    cursor: pointer;
+    color: #004099;
+    /*border-left: 3px solid #004099;
+    /*box-shadow: 0 0 15px 1px #7d7d7d;*/
+}

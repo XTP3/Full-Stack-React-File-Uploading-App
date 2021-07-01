@@ -1,0 +1,170 @@
+.Upload {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.UploadPanel {
+    position: relative;
+    display: grid;
+    grid-template-rows: 88% 12%;
+    height: 70vh;
+    width: 80vw;
+    background-color: transparent;
+    box-shadow: 0 0 15px 1px black;
+    margin: 0;
+    padding: 0;
+    max-width: 455px;
+}
+
+.FileDropZone {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #017b82;
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: #292929;
+    border-radius: 15px;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+  
+::-webkit-scrollbar-corner {
+    display: none;
+}
+
+.Instructions {
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+}
+
+#FileInput {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.FileList {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    overflow-y: scroll;
+}
+
+.File {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    position: relative;
+    list-style-type: none;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+    font-size: small;
+    border: none;
+    background-color: #191919;
+    border-radius: 15px;
+    box-shadow: -1px 3px 5px 0px black;
+    height: 40px;
+}
+
+.FileNameWrapper, .FileSizeWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.FileNameWrapper {
+    justify-content: baseline;
+    text-overflow: ellipsis;
+}
+
+.FileSizeWrapper {
+    justify-content: center;
+}
+
+.FileName {
+    margin-left: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.FileSize {
+    color: #19e044;
+}
+
+.ControlCenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ClearButton, .UploadButton {
+    position: relative;
+    height: 40px;
+    width: 100px;
+    border: none;
+    box-shadow: -1px 3px 5px 0px black;
+    border-radius: 8px;
+    text-decoration: none;
+    outline: none;
+}
+
+.ClearButton:hover, .UploadButton:hover {
+    cursor: pointer;
+}
+
+.ClearButton {
+    margin-left: 20px;
+}
+
+#Progress {
+    color: #7c7c7c;
+    font-size: large;
+}
+
+.UploadButton {
+    margin-right: 20px;
+}
+
+@media only screen and (min-width: 940px) {
+    .UploadPanel {
+        height: 90vh;
+        max-width: 650px;
+    }
+    .Instructions, #Progress {
+        font-size: x-large;
+    }
+}

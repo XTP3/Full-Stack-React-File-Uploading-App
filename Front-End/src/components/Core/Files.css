@@ -1,0 +1,41 @@
+.Files {
+    position: relative;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ControlsBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ControlButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.FileListWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: scroll;
+}
+
+.UsersFileList {
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0px;
+    max-width: 930px;
+}

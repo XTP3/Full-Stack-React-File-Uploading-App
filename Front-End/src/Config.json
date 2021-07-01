@@ -1,0 +1,4 @@
+{
+    "SERVER_URL": "https://website.com",
+    "MAX_ALLOTTED_FILE_SIZE": 10737418240
+}

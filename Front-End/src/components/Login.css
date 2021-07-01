@@ -1,0 +1,82 @@
+.Login {
+  display: grid;
+  grid-auto-rows: auto;
+  height: 250px;
+  width: 350px;
+  border-radius: 10px;
+  background-color: #131415;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-shadow: 0px 0px 20px 0px black;
+}
+
+.Input.username, .Input.password, .Input.submit {
+  display: flex;
+  text-decoration: none;
+  outline: none;
+}
+
+.Input.username {
+  justify-content: center;
+  align-items: center;
+}
+
+.Input.password {
+  justify-content: center;
+  align-items: baseline;
+}
+
+.Input.submit {
+  justify-content: center;
+  align-items: center;
+}
+
+.InputsWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+  box-sizing: border-box;
+}
+
+.CreateAccountInput {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #1d1d1d;
+  color: white;
+  margin-right: 8px;
+}
+
+.CreateAccountInput:hover {
+  cursor: pointer;
+}
+
+.UsernameInput, .PasswordInput {
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1d1d1d;
+  color: white;
+  text-indent: 5px;
+  outline: none;
+}
+
+.SubmitInput {
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  background-color: #1d1d1d;
+  color: white;
+  margin-left: 8px;
+}
+
+.SubmitInput:hover {
+  cursor: pointer;
+}

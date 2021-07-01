@@ -1,0 +1,58 @@
+.Core {
+    position: relative;
+    display: grid;
+    grid-template-columns: 61px auto;
+    height: 100%;
+    width: 100%;
+    background-color: #131415;
+    box-sizing: border-box;
+
+}
+
+.Sidebar {
+    border-right: 1px solid black;
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.Buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.SidebarButtons {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0px;
+}
+
+.LogoutButtonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.Logout {
+    height: 60px;
+    width: 60px;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    background-color: inherit;
+    color: white;
+    margin-bottom: 3px;
+}
+
+.Logout > ion-icon {
+    font-size: 25px;
+}
+
+.Logout:hover > ion-icon {
+    cursor: pointer;
+    color: red;
+}
+
+.ContentPanel {
+    position: relative;
+}
