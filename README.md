@@ -1,7 +1,7 @@
 # About
 This is a full-stack, headless, file-uploading web-application using React and Express.
 
-This is my very first:
+Please note this is my very first:
 - JavaScript
 - NodeJS
 - React
