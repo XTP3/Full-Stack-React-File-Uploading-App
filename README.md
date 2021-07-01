@@ -54,10 +54,14 @@ Although not required, you may modify your page's title within the /public direc
 ```
 
 Enter the parent directory of the application's files and install the necessary packages/dependencies:
-```npm install```
+```
+npm install
+```
 
 Compile the application into servable static files:
-```npm run build```
+```
+npm run build
+```
 
 Place the files generated within the /build directory within your back-end's /www folder, or some other HTTP(s) static content web server.
 
