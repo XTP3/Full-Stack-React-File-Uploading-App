@@ -35,7 +35,7 @@ Clone or Download the server's files and modify the Config.json accordingly:
 #### Requirements
 - NodeJS
 
-You will need to modify the front-end React Application and manually compile prior to deployment, as the configuration file is unaccessable during production.
+You will need to modify the front-end React Application and *manually* compile prior to deployment, as the configuration file is unaccessable during production.
 
 Within the /src directory, you will need to connect your front-end to the back-end by modifying the Config.json file:
 
