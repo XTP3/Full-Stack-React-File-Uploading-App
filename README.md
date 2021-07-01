@@ -45,7 +45,7 @@ Within the /src directory, you will need to connect your front-end to the back-e
     "MAX_ALLOTTED_FILE_SIZE": 10737418240
 }
 ```
-- Be sure to synchronize your max file size with that of your server.
+Be sure to synchronize your max file size with that of your server.
 
 Although not required, you may modify your page's title within the /public directory by modifying the index.html file:
 
@@ -61,7 +61,7 @@ Compile the application into servable static files:
 
 Place the files generated within the /build directory within your back-end's /www folder, or some other HTTP(s) static content web server.
 
-##### Conclusion
+#### Conclusion
 
 Please note this is my very first:
 - JavaScript
