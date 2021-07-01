@@ -5,6 +5,7 @@ This is a full-stack, headless, file-uploading web-application using React and E
 ### Server
 #### Requirements
 - NodeJS
+- MongoDB
 - TLS/SSL Certificates (recommended)
 
 Clone or Download the server's files and modify the Config.json accordingly:
