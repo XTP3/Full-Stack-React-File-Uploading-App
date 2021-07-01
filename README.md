@@ -8,7 +8,7 @@ This is a full-stack, headless, file-uploading web-application using React and E
 - MongoDB
 - TLS/SSL Certificates (recommended)
 
-Clone or Download the server's files and modify the Config.json accordingly:
+Clone or download the latest server release and modify the Config.json accordingly:
 
 ```
 {
@@ -35,6 +35,8 @@ Clone or Download the server's files and modify the Config.json accordingly:
 ### Client
 #### Requirements
 - NodeJS
+
+Clone or download the latest client release and enter the parent directory.
 
 You will need to modify the front-end React Application and *manually* compile prior to deployment, as the configuration file is inaccessable during production.
 
