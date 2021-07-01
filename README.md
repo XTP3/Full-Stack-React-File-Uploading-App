@@ -9,8 +9,9 @@ This is my very first:
 - Multer
 - MongoDB
 - Responsive
+- Headless
 
-project.
+project/time using these systems.
 
 ## Installation
 ### Server
