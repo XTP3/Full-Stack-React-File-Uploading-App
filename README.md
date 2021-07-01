@@ -1,18 +1,6 @@
 # About
 This is a full-stack, headless, file-uploading web-application using React and Express.
 
-Please note this is my very first:
-- JavaScript
-- NodeJS
-- React
-- Express
-- Multer
-- MongoDB
-- Responsive
-- Headless
-
-project/time using these systems.
-
 ## Installation
 ### Server
 #### Requirements
@@ -72,3 +60,18 @@ Compile the application into servable static files:
 ```npm run build```
 
 Place the files generated within the /build directory within your back-end's /www folder, or some other HTTP(s) static content web server.
+
+##### Conclusion
+
+Please note this is my very first:
+- JavaScript
+- NodeJS
+- React
+- Express
+- Multer
+- MongoDB
+- Responsive
+- Headless
+- GitHub
+
+project/time using these systems.
