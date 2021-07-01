@@ -1,13 +1,23 @@
 # About
 This is a full-stack, headless, file-uploading web-application using React and Express.
 
+This is my very first:
+- JavaScript
+- NodeJS
+- React
+- Express
+- Multer
+- MongoDB
+- Responsive Web
+project.
+
 ## Installation
 ### Server
 #### Requirements
 - NodeJS
 - TLS/SSL Certificates (recommended)
 
-Clone or Download the server's files and modify the Config.json accordingly.
+Clone or Download the server's files and modify the Config.json accordingly:
 
 ```
 {
@@ -37,8 +47,26 @@ Clone or Download the server's files and modify the Config.json accordingly.
 
 You will need to modify the front-end React Application and manually compile prior to deployment, as the configuration file is unaccessable during production.
 
-Although not required, you may modify your HTML title in the /public directory by modifying index.html:
+Within the /src directory, you will need to connect your front-end to the back-end by modifying the Config.json file:
+
+```
+{
+    "SERVER_URL": "https://website.com",
+    "MAX_ALLOTTED_FILE_SIZE": 10737418240
+}
+```
+- Be sure to synchronize your max file size with that of your server.
+
+Although not required, you may modify your page's title within the /public directory by modifying the index.html file:
 
 ```
 <title>Website Title</title>
 ```
+
+Enter the parent directory of the application's files and install the necessary packages/dependencies:
+```npm install```
+
+Compile the application into servable static files:
+```npm run build```
+
+Place the files generated within the /build directory within your back-end's /www folder, or some other HTTP(s) static content web server.
