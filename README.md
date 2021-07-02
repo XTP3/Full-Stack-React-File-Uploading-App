@@ -82,7 +82,7 @@ To start the server, enter the directory containing index.js and execute the fol
 node index.js
 ```
 
-You will most likely require elevated privelages on most machines:
+You will most likely need elevated privelages on most machines:
 ```
 sudo node index.js
 ```
