@@ -77,6 +77,16 @@ npm run build
 
 Place the files generated within the /build directory within your back-end's /www folder, or some other HTTP(s) static content web server.
 
+To start the server, enter the directory containing index.js and execute the following:
+```
+node index.js
+```
+
+You will most likely require elevated privelages on most machines:
+```
+sudo node index.js
+```
+
 #### Conclusion
 
 Please note this is my very first:
