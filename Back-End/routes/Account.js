@@ -10,6 +10,7 @@ const vToken = require('../VerifyToken');
 const accountCreationCode = Config.ACCOUNT_CREATION_CODE;
 const saltRounds = Config.BCRYPT_SALT_ROUNDS;
 const vt = vToken.verifyToken;
+const dateTimeZoneRegion = Config.DATE_TIMEZONE_REGION;
 
 //This file handles routes inbound to /api/account
 
@@ -48,7 +49,7 @@ router.post('/create', async(req, res) => {
             await user.save();
             await createNewFolder(uniqueID);
             res.sendStatus(201);
-            let dateNow = new Date(timeOfCreation).toLocaleString("en-US");
+            let dateNow = new Date(timeOfCreation).toLocaleString(dateTimeZoneRegion);
             console.log("[" + dateNow + "] Created new account with username " + username);
 
         } catch (error) {
