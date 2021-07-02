@@ -56,6 +56,15 @@ Although not required, you may modify your page's title within the /public direc
 <title>Website Title</title>
 ```
 
+You can also modify the name of the react application directly as well as the description in the manifest.json:
+
+```
+{
+  "short_name": "Website",
+  "name": "Website.com description",
+}
+```
+
 Enter the parent directory of the application's files and install the necessary packages/dependencies:
 ```
 npm install
