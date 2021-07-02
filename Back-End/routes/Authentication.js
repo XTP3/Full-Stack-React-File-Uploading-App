@@ -8,6 +8,7 @@ const vToken = require('../VerifyToken');
 
 const secretKey = Config.JWT_SECRET_KEY;
 const expiration = Config.JWT_EXPIRATION;
+const dateTimeZoneRegion = Config.DATE_TIMEZONE_REGION;
 
 const vt = vToken.verifyToken;
 
@@ -26,7 +27,7 @@ router.post('/login', async (req, res) => {
             jwt.sign({uniqueID}, secretKey, { expiresIn: expiration }, (err, token) => {
                 res.json({token});
             });
-            let dateNow = new Date(Date.now()).toLocaleString("en-US");
+            let dateNow = new Date(Date.now()).toLocaleString(dateTimeZoneRegion);
             console.log("[" + dateNow + "] Login: " + username);
         }else {
             res.sendStatus(401);
