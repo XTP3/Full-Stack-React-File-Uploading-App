@@ -2,13 +2,14 @@
 This is a full-stack, headless, file-uploading web-application using React and Express.
 
 ## Installation
+
+Download the latest repo.
+
 ### Server
 #### Requirements
 - NodeJS
 - MongoDB
 - TLS/SSL Certificates (recommended)
-
-Download the repo.
 
 Enter the Back-End (server) directory and modify the Config.json accordingly:
 
