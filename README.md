@@ -103,4 +103,4 @@ Please note this is my very first:
 - Headless
 - GitHub
 
-project/time using these systems.
+project/time using all of these systems.
