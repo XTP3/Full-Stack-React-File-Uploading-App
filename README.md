@@ -3,6 +3,12 @@ This is a responsive, full-stack, headless, file-uploading web-application using
 
 ![Alt text](preview.png?raw=true "Preview")
 
+## Features
+ - Mobile-friendly
+ - Multiple File Upload
+ - File Browser
+  - Test
+
 ## Installation
 
 Download the latest repo.
