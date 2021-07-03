@@ -6,8 +6,8 @@ This is a responsive, full-stack, headless, file-uploading web-application using
 ## Features
  - Mobile-friendly
  - Multiple File Upload
- - File Browser
-  - Test
+ - File Browser with sorting, searching, and unique shareable links
+ - Self-hostable
 
 ## Installation
 
