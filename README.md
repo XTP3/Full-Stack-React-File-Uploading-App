@@ -1,5 +1,5 @@
 # About
-This is a full-stack, headless, file-uploading web-application using React and Express.
+This is a responsive, full-stack, headless, file-uploading web-application using React and Express.
 
 ![Alt text](preview.png?raw=true "Preview")
 
