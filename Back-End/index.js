@@ -44,6 +44,34 @@ try {
     console.log("ERROR: Could not find chain certificate!")
 }
 
+fs.access('./uploads', (error) => {
+    if(error) {
+        console.log("No uploads directory found, creating a new one...");
+        fs.mkdir('./uploads', (err) => {
+            if(err) {
+                console.log("Uploads directory creation failed!", err);
+
+            }else {
+                console.log("Uploads directory created successfully!");
+            }
+        });
+    }
+});
+
+fs.access('./www', (error) => {
+    if(error) {
+        console.log("No static files directory found, creating a new one...");
+        fs.mkdir('./www', (err) => {
+            if(err) {
+                console.log("Static files directory creation failed!", err);
+
+            }else {
+                console.log("Static files directory created successfully!");
+            }
+        });
+    }    
+});
+
 const certs = {key: privateKey, passphrase: pemPassphrase, cert: certificate, ca: caCert};
 
 const httpServer = http.createServer(app);
