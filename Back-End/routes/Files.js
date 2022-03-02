@@ -4,7 +4,7 @@ const multer = require('multer');
 const vToken = require('../VerifyToken');
 const { nanoid } = require('nanoid');
 const router = express.Router();
-const File = reqire('../models/File');
+const File = require('../models/File');
 const path = require('path');
 const fs = require('fs');
 
@@ -110,7 +110,7 @@ router.delete('/api/files/delete/:fileUUID', vt, async (req, res) => {
             console.log(error);
         }
     }else {
-        return res.sendStatus(404);
+        res.sendStatus(404);
     }
 });
 
