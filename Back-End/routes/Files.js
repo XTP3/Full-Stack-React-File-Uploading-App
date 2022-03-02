@@ -4,7 +4,7 @@ const multer = require('multer');
 const vToken = require('../VerifyToken');
 const { nanoid } = require('nanoid');
 const router = express.Router();
-const File = require('../models/File');
+const File = reqire('../models/File');
 const path = require('path');
 const fs = require('fs');
 
@@ -109,7 +109,9 @@ router.delete('/api/files/delete/:fileUUID', vt, async (req, res) => {
         }catch(error) {
             console.log(error);
         }
-    } 
+    }else {
+        return res.sendStatus(404);
+    }
 });
 
 router.post('/f', vt, async(req, res) => {
@@ -120,13 +122,13 @@ router.post('/f', vt, async(req, res) => {
         let usersFiles;
         
         if(sortOrder === "alphabetical") {
-            usersFiles = await File.find({uploaderID:uploaderID}).collation({locale: "en" }).sort({"fileName": 1});
+            usersFiles = await File.find({uploaderID:uploaderID}).collation({locale: "en"}).sort({"fileName": 1});
         
         }else if(sortOrder === "chronological") {
-            usersFiles = await File.find({uploaderID:uploaderID}).collation({locale: "en" }).sort({"timeOfUpload": -1});
+            usersFiles = await File.find({uploaderID:uploaderID}).collation({locale: "en"}).sort({"timeOfUpload": -1});
 
         }else if(sortOrder === "size") {
-            usersFiles = await File.find({uploaderID:uploaderID}).collation({locale: "en" }).sort({"fileSize": -1});
+            usersFiles = await File.find({uploaderID:uploaderID}).collation({locale: "en"}).sort({"fileSize": -1});
 
         }else {
             usersFiles = await File.find({uploaderID:uploaderID});
