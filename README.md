@@ -1,5 +1,5 @@
 # About
-This is a responsive, full-stack, headless file sharing web-application using the MERN stack.
+This is a responsive, full-stack, headless, file sharing web-application using the MERN stack.
 
 ![Alt text](preview.png?raw=true "Preview")
 
