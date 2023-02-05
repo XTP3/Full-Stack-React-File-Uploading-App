@@ -1,10 +1,10 @@
 # About
-This is a responsive, full-stack, headless, file-uploading web-application using React and NodeJS/Express.
+This is a responsive, full-stack, headless file sharing web-application using the MERN stack.
 
 ![Alt text](preview.png?raw=true "Preview")
 
 ## Features
- - Mobile-friendly
+ - Responsive (mobile-friendly)
  - Multiple File Upload
  - File Browser with sorting, searching, and unique shareable links
  - Self-hostable
@@ -100,15 +100,4 @@ sudo node index.js
 
 #### Conclusion
 
-Please note this is my very first:
-- JavaScript
-- NodeJS
-- React
-- Express
-- Multer
-- MongoDB
-- Responsive
-- Headless
-- GitHub
-
-project/time using all of these systems.
+This app is very simple, and my very first full stack MERN app, not recommended for public production environments.
